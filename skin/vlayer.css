@@ -1,0 +1,91 @@
+@charser "utf-8";
+/*遮罩层*/
+.vvBox_overlay{
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 100%;
+	width:100%;
+	background-color: #444;
+	opacity: 0.3;
+}
+/*加载中*/
+.vvBox .vvBox_loading{
+	margin:0 auto;
+	height:60px;
+	width:300px;
+	background: url(images/vvbox-loading.gif) no-repeat center;
+}
+/*弹窗*/
+.vvBox{
+	position: absolute;
+	top:0;
+	left:0;
+}
+.vvBox .vvBox_popup{
+	position: relative;
+	padding: 5px;
+	background-color:#e0e0e0;
+	background-color:rgba(0,0,0,0.1);
+	border-radius: 3px;
+}
+.vvBox table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.vvBox .vvBox_body{
+	border:1px solid #ccc;
+	background: #fff;
+	border-radius: 3px;
+}
+.vvBox .vvBox_title{
+	padding: 0px 0px 0px 10px;
+	height:28px;
+	line-height: 28px;
+	color:#444;
+	border-bottom: 1px solid #ddd;
+	background: #e0e0e0;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
+.vvBox .vvBox_title span{
+	float:left;
+	font-weight: bold;
+}
+.vvBox .vvBox_title .control{
+	float:right;
+	padding: 7px 10px 7px 0px;
+	cursor: default;
+}
+.vvBox .vvBox_title .control i {
+	float: left;
+	margin:0px 0px 0px 5px;
+	height: 14px;
+	width: 14px;
+	cursor: pointer;
+}
+.vvBox .vvBox_title .control i.restore{
+	display: none;
+	background-image: url("images/vvbox-restore.png");
+}
+.vvBox .vvBox_title .control i.min{
+	background-image: url("images/vvbox-min.png");
+}
+.vvBox .vvBox_title .control i.close{
+	background-image: url("images/vvbox-close.png");
+}
+.vvBox .vvBox_title .control i:hover {
+	background-position: 0 -14px;
+}
+.vvBox .vvBox_content{
+	padding:10px;
+	zoom:1;
+}
+.vvBox .vvBox_content:after{
+	clear: both;
+	display: block;
+	height:0;
+	font-size: 0;
+	overflow: hidden;
+	content: "";
+}
