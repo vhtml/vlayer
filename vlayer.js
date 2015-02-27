@@ -1,8 +1,8 @@
 (function ($) {
 	//reset
 	function reset(n, m) {
-		var x = m || 0;
-		return n < x ? x : n;
+		m = m || 0;
+		return n < m ? m : n;
 	}
 	//判断插件是否加载过
 	function isExist() {
